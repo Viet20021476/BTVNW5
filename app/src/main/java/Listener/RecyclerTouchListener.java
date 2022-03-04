@@ -108,8 +108,8 @@ public class RecyclerTouchListener implements RecyclerView.OnItemTouchListener {
                 _child.getHitRect(_bounds);
                 if (_bounds.contains((int) e.getX() - viewGroup.getLeft(), (int) e.getY() - viewGroup.getTop())) {
                     if (_child instanceof ImageView) {
-                        
-
+                        TextView folder_name = child.findViewById(R.id.tv_folder_name);
+                        folder_name.setText("");
                     }
 
                 }
